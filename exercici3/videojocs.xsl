@@ -13,11 +13,10 @@
           .punts { font-size: 1.5em; font-weight: bold; margin: 10px 0; }
           .info { font-size: 0.9em; color: #95a5a6; line-height: 1.6; }
           
-          /* Classes de colors per puntuació  */
-          .excellent { color: #f1c40f; text-shadow: 0 0 5px #f1c40f; } /* Daurat */
-          .be { color: #2ecc71; } /* Verd */
-          .regular { color: #e67e22; } /* Taronja */
-          .dolent { color: #e74c3c; } /* Vermell */
+          .excellent { color: #f1c40f; text-shadow: 0 0 5px #f1c40f; }
+          .be { color: #2ecc71; }
+          .regular { color: #e67e22; }
+          .dolent { color: #e74c3c; }
         </style>
       </head>
       <body>
@@ -25,32 +24,27 @@
         <div class="contenidor">
           
           <xsl:for-each select="videojocs/joc">
-            <xsl:sort select="puntuacio" data-type="number" order="descending" />
-            
-            <div class="targeta">
+            <xsl:sort select="puntuacio" data-type="number" order="descending" /> <div class="targeta">
               <div class="titol"><xsl:value-of select="titol"/></div>
               
               <div class="punts">
-                <xsl:attribute name="class">
-                  <xsl:choose>
-                    <xsl:when test="puntuacio &gt;= 9">punts excellent</xsl:when>
+                <xsl:attribute name="class"> <xsl:choose> <xsl:when test="puntuacio &gt;= 9">punts excellent</xsl:when>
                     <xsl:when test="puntuacio &gt;= 7">punts be</xsl:when>
                     <xsl:when test="puntuacio &gt;= 5">punts regular</xsl:when>
                     <xsl:otherwise>punts dolent</xsl:otherwise>
                   </xsl:choose>
                 </xsl:attribute>
-                <xsl:value-of select="puntuacio"/>
+                ⭐ <xsl:value-of select="puntuacio"/>
               </div>
 
               <div class="info">
                 <strong>Plataforma: </strong>
-                <xsl:choose>
-                  <xsl:when test="plataforma = 'Nintendo Switch'">🟥 </xsl:when>
+                <xsl:choose> <xsl:when test="plataforma = 'Nintendo Switch'">🟥 </xsl:when>
                   <xsl:when test="plataforma = 'PlayStation 5'">🟦 </xsl:when>
                   <xsl:when test="plataforma = 'Xbox Series X'">🟩 </xsl:when>
-                  <xsl:when test="plataforma = 'PC'"></xsl:when>
-                  <xsl:when test="plataforma = 'Mòbil'"></xsl:when>
-                  <xsl:otherwise></xsl:otherwise>
+                  <xsl:when test="plataforma = 'PC'">💻 </xsl:when>
+                  <xsl:when test="plataforma = 'Mobil'">📱 </xsl:when>
+                  <xsl:otherwise>🎮 </xsl:otherwise>
                 </xsl:choose>
                 <xsl:value-of select="plataforma"/>
               </div>
@@ -58,8 +52,7 @@
               <div class="info">
                 <p>Gènere: <xsl:value-of select="genere"/></p>
                 <p>Any: <xsl:value-of select="any"/></p>
-                <p>Preu: <xsl:value-of select="preu"/> €</p>
-              </div>
+                <p>Preu: <xsl:value-of select="preu"/> €</p> </div>
             </div>
             
           </xsl:for-each>
