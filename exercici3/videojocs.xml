@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="videojocs.xsl"?>
+<videojocs>
+  <joc>
+    <titol>EAFC 26</titol>
+    <plataforma>PlayStation 5</plataforma>
+    <genere>Sport</genere>
+    <any>2026</any>
+    <puntuacio>2.0</puntuacio>
+    <preu>69.99</preu>
+  </joc>
+  <joc>
+    <titol>Elden ring</titol>
+    <plataforma>PlayStation 5</plataforma>
+    <genere>RPG</genere>
+    <any>2023</any>
+    <puntuacio>9.0</puntuacio>
+    <preu>69.90</preu>
+  </joc>
+  
+  <joc>
+    <titol>Footbal Manager</titol>
+    <plataforma>Xbox Series X</plataforma>
+    <genere>Accio</genere>
+    <any>2024</any>
+    <puntuacio>4.0</puntuacio>
+    <preu>40.00</preu>
+  </joc>
+
+  <joc>
+    <titol>Cyberpunk 2077</titol>
+    <plataforma>PC</plataforma>
+    <genere>RPG</genere>
+    <any>2020</any>
+    <puntuacio>6.5</puntuacio>
+    <preu>29.99</preu>
+  </joc>
+  <joc>
+    <titol>Brawl Stars</titol>
+    <plataforma>Mobil</plataforma>
+    <genere>Accio</genere>
+    <any>2017</any>
+    <puntuacio>10.0</puntuacio>
+    <preu>0.00</preu>
+  </joc>
+</videojocs>
