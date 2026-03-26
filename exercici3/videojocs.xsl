@@ -40,11 +40,11 @@
               <div class="info">
                 <strong>Plataforma: </strong>
                 <xsl:choose> <xsl:when test="plataforma = 'Nintendo Switch'">🟥 </xsl:when>
-                  <xsl:when test="plataforma = 'PlayStation 5'">🟦 </xsl:when>
-                  <xsl:when test="plataforma = 'Xbox Series X'">🟩 </xsl:when>
-                  <xsl:when test="plataforma = 'PC'">💻 </xsl:when>
-                  <xsl:when test="plataforma = 'Mobil'">📱 </xsl:when>
-                  <xsl:otherwise>🎮 </xsl:otherwise>
+                  <xsl:when test="plataforma = 'PlayStation 5'"> </xsl:when>
+                  <xsl:when test="plataforma = 'Xbox Series X'"> </xsl:when>
+                  <xsl:when test="plataforma = 'PC'"> </xsl:when>
+                  <xsl:when test="plataforma = 'Mobil'"> </xsl:when>
+                  <xsl:otherwise> </xsl:otherwise>
                 </xsl:choose>
                 <xsl:value-of select="plataforma"/>
               </div>
